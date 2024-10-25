@@ -1,0 +1,157 @@
+body {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 120%;
+    background-color: #1A1A1D; /* Dark background color */
+    color: #F7F0D2; /* Lightest color from the palette */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D9534F; /* Red from the palette */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px #c34b47; /* Shadow using the specified color */
+    margin-bottom: 80px;
+}
+
+#homeButton{
+    margin-left: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.highlight{
+    font-family: 'Play';
+    font-weight: bold;
+    color:#73c6df;
+}
+
+
+section {
+    padding: 0px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto auto;
+    background-color: #43474A; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px #43474A;
+}
+
+
+h2 {
+    color: #F7F0D2; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #3EA2C0;
+    box-shadow: 0 3px 0 #257f9b;
+    font-size: 80%;
+    font-family: 'Tomorrow';
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+li:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+li:hover{
+    background-color: #51b4d3;
+}
+
+a {
+    color: #ffffff;
+    border: 0;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: "Tomorrow", sans-serif;
+    text-decoration: none;
+}
+.specialButton {
+    display: inline-block;
+    background-color: #3EA2C0; 
+    box-shadow: 0 5px 0 #257f9b; 
+    margin-right: 5px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.specialButton:hover {
+    background-color: #55b4d0;
+}
+
+.specialButton:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.headerButton {
+    display: inline-block;
+    background-color: #da7672;
+    box-shadow: 0 5px 0 #a74642; 
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "Tomorrow", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.headerButton:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.headerButton:hover{
+    background-color: #f48985;
+}
+
+
+footer {
+    background-color: #5A6268; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#aFooter {
+    font-size: 80%;
+    color: #ffffff;
+    font-family: 'Tomorrow';
+    text-align: justify;
+    text-align: center;
+
+}
+
+#aFooter:hover{
+    font-weight: bold; 
+}
