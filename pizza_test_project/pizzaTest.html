@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Personalidade de Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="pizzaTest.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap&family=Play:wght@400;700&display=swap&family=Nunito" rel="stylesheet">  
+</head>
+<body class="frontPage" onclick="scrollToTarget()">
+    <style>     
+    </style>
+    <header>
+        <div style="text-align: center;">
+            <h1>Teste de Personalidade</h1>
+               <p id="subtitle">Que sabor de Pizza você é?</p>
+        </div>
+    </header>
+    <section class="container" id="quiz-container">
+        <p id="resultado-texto"></p>
+        <h2>Qual sabor de pizza é você?</h2>
+        <div class="question" id="question-text"></div>
+        <div id="options-container"></div>
+        <button id="next-button" class="next" onclick="proximaPergunta()">Próxima</button>
+    </section>    
+    <script src="pizzaTest.js"></script>
+    <!-- Criando a tag de áudio para tocar a "Tarantella Napoletana" junto com o script em JS e os controles-->
+    <audio id= "background-music" src="che_la_luna.m4a" autoplay loop></audio>  <!-- Tag de áudio para tocar a música -->
+    <button class="music-control" id="music-toggle"><i class="fas fa-volume-up"></i></button>  <!-- Botão para controlar a música -->
+    <script>
+        // Seleciona o elemento de áudio e o botão d    e controle
+            const music = document.getElementById('background-music');
+            const musicToggle = document.getElementById('music-toggle');
+            const icon = musicToggle.querySelector('i');
+
+        // Função para alternar a reprodução da música
+            musicToggle.addEventListener('click', () => {
+            if (music.paused) {
+            music.play();
+            icon.classList.remove('fa-volume-mute');
+            icon.classList.add('fa-volume-up'); // Ícone para som ligado
+            } else {
+            music.pause();
+            icon.classList.remove('fa-volume-up');
+            icon.classList.add('fa-volume-mute'); // Ícone para som desligado
+        }
+    })
+    </script>
+    <script>
+        function scrollToTarget() {
+          const targetElement = document.getElementById("quiz-container");
+          targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      </script>
+    
+    <div style="height: 130px;">
+        <footer>
+            <p id="pFooter">By <a href="../" id="autor1">Vinicius Pinheiro</a>, Guilherme Assunção e Sunamita Nascimento</p>
+        </footer>
+    </div>
+</body>
+</html>

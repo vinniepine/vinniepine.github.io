@@ -1,0 +1,173 @@
+/* style.css */
+body {
+    font-family: 'play', Arial, sans-serif;
+    background-color: #9f9f9f; /* Cor de fundo */
+    background-image: url('pizza-images/pizza_background.webp'); /* Caminho para a imagem da textura */
+    background-size: cover;
+    background-blend-mode: multiply; /* Mistura a imagem com a cor de fundo */
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #842626;
+    box-shadow: 0 4px 12px #7a2727;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(220, 220, 220, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1{
+    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
+}
+
+p, h2{
+    font-family: 'Play';
+}
+
+.question {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: 'Tomorrow';
+    background-color: #c34444;
+    box-shadow: 0 4px 0 #642323;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 0;
+}
+.question{
+    font-weight: bold;
+}
+button:hover {
+    background-color: #b53b3b;
+}
+
+button:active{
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+    display: none;
+}
+
+.music-control {
+    position: fixed;
+    box-shadow: 0 2px 0 #b0b0b0;
+    top: 20px;
+    right: 20px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    border: 2px;
+}
+
+.music-control:hover {
+    background-color: #ffffff;
+
+}
+.music-control:active{
+    transform: translateY(2px);
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #367148; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#autor1{
+    text-decoration: none;
+}
+#autor1:hover{
+    font-weight: 600;
+}
+/* style.css */
+#subtitle {
+    background-color: #ba4c4c; /* Cor de fundo, por exemplo, um tom de laranja */
+    color: #ffffff; /* Cor do texto */
+    padding: 10px 30px; /* Espaçamento interno para deixar o fundo maior */
+    border-radius: 20px; /* Arredondar os cantos */
+    display: inline-block; /* Garante que o fundo se ajuste ao tamanho do texto */
+    margin-top: 0; /* Espaçamento acima do subtítulo */
+}
+
+a {
+    color:#ffffff;
+}
+
+#options-container label{
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+    align-items: center; /* Garante que o texto fique alinhado verticalmente com o input */
+    margin-left: 15%;
+    gap: 30px; /* Espaçamento entre o input e o texto */
+    margin-bottom: 0; /* Espaçamento entre as opções */
+}
+
+#question-text{
+    font-size: medium;
+    display: flex;
+    align-items:cemter;
+    margin-left: 12%;
+}
+
+#resultado-imagem {
+    width: 400px;
+    display: block;
+    border-radius: 15px;
+    margin: 20px auto;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.highlight{
+    font-weight: 700;
+}  
+
+#resultado-imagem {
+    width: 400px;
+    display: block;
+    border-radius: 15px;
+    margin: 20px auto;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
