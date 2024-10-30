@@ -4,12 +4,12 @@ const perguntas = [
     {
         texto: "1. Primeiro, escolha um brinquedo com o qual brincar:",
         opcoes: [
-            { imagem: 'cat-images/1st-toy.webp', categorias: { siamês: 2, branco: 1 } },
-            { imagem: 'cat-images/2nd-toy.webp', categorias: { preto: 2, rajado: 1 } },
-            { imagem: 'cat-images/3rd-toy.webp', categorias: { branco: 2, amarelo: 1 } },
-            { imagem: 'cat-images/4th-toy.webp', categorias: { amarelo: 2, siamês: 1 } },
-            { imagem: 'cat-images/5th-toy.webp', categorias: { cinza: 2, preto: 1 } },
-            { imagem: 'cat-images/6th-toy.webp', categorias: { rajado: 2, calico: 2 } }
+            { imagem: 'cat-images/1st-toy.webp', categorias: { siamese: 1, branco: 1 } },
+            { imagem: 'cat-images/2nd-toy.webp', categorias: { preto: 1, rajado: 1 } },
+            { imagem: 'cat-images/3rd-toy.webp', categorias: { branco: 1, amarelo: 1 } },
+            { imagem: 'cat-images/4th-toy.webp', categorias: { amarelo: 1, siamese: 1 } },
+            { imagem: 'cat-images/5th-toy.webp', categorias: { cinza: 1, preto: 1 } },
+            { imagem: 'cat-images/6th-toy.webp', categorias: { rajado: 1, calico: 1 } }
         ]
     },
     {
@@ -19,7 +19,7 @@ const perguntas = [
             { texto: "Miau", categorias: { calico: 1, amarelo: 1 } },
             { texto: "Felino", categorias: { cinza: 1 } },
             { texto: "Liteira", categorias: { rajado: 1 } },
-            { texto: "Atum", categorias: { siamês: 1 } },
+            { texto: "Atum", categorias: { siamese: 1 } },
             { texto: "Patinha", categorias: { branco: 1 } }
         ]
     }, 
@@ -30,7 +30,7 @@ const perguntas = [
             { imagem: 'cat-images/spot2.webp', categorias: { rajado: 1 } },
             { imagem: 'cat-images/spot3.webp', categorias: { preto: 1  } },
             { imagem: 'cat-images/spot4.webp', categorias: { amarelo: 1, calico: 1 } },
-            { imagem: 'cat-images/spot5.webp', categorias: { siamês: 1 }},
+            { imagem: 'cat-images/spot5.webp', categorias: { siamese: 1 }},
             { imagem: 'cat-images/spot6.webp', categorias: { branco: 1 } }
         ]
     },
@@ -40,7 +40,7 @@ const perguntas = [
             { texto: "Caçar um rato", categorias: { rajado: 1 } },
             { texto: "Comer várias guloseimas", categorias: { amarelo: 1 } },
             { texto: "Brincar com seu brinquedo favorito", categorias: { cinza: 1, calico: 1 } },
-            { texto: "Passar horas sendo mimado por humanos", categorias: { siamês: 1 } },
+            { texto: "Passar horas sendo mimado por humanos", categorias: { siamese: 1 } },
             { texto: "Assassinato a sangue frio", categorias: { preto: 1 } },
             { texto: "Tirar uma soneca dentro da soneca, como em 'A Origem'", categorias: { branco: 1 } }
         ]
@@ -48,25 +48,25 @@ const perguntas = [
     {
         texto: "5. Escolha uma cor",
         opcoes: [
-            { imagem: 'cat-images/purple.png', categorias: { preto: 3 } },
-            { imagem: 'cat-images/light-blue.png', categorias: { cinza: 3 } },
-            { imagem: 'cat-images/green.png', categorias: { rajado: 3 } },
-            { imagem: 'cat-images/yellow.png', categorias: { siamês: 3 } },
-            { imagem: 'cat-images/red.png', categorias: { calico: 3 } },
-            { imagem: 'cat-images/orange.png', categorias: { amarelo: 3 } },
+            { imagem: 'cat-images/purple.png', categorias: { preto: 1 } },
+            { imagem: 'cat-images/light-blue.png', categorias: { cinza: 1 } },
+            { imagem: 'cat-images/green.png', categorias: { rajado: 1 } },
+            { imagem: 'cat-images/yellow.png', categorias: { siamese: 1 } },
+            { imagem: 'cat-images/red.png', categorias: { calico: 1 } },
+            { imagem: 'cat-images/orange.png', categorias: { amarelo: 1 } },
             { imagem: 'cat-images/light-pink.png', categorias: {branco: 3} }
         ]
     },
     {
         texto: "6. Escolha um item para derrubar da mesa",
         opcoes: [
-            { texto: "Uma caneta", categorias: { rajado: 3 } },
-            { texto: "Um copo vazio", categoria: { amarelo: 3 } },
-            { texto: "Um monte de pastas", categorias: { calico: 3 } },
-            { texto: "um rolo de linha", categorias: { branco: 3 } },
-            { texto: "Uma bolinha", categoria: { siamês: 3} },
-            { texto: "Uma vela acesa", categorias: { preto: 3 } },
-            { texto: "Uma xícara quase cheia", categorias: {cinza: 3} }
+            { texto: "Uma caneta", categorias: { rajado: 1 } },
+            { texto: "Um copo vazio", categoria: { amarelo: 1 } },
+            { texto: "Um monte de pastas", categorias: { calico: 1 } },
+            { texto: "um rolo de linha", categorias: { branco: 1 } },
+            { texto: "Uma bolinha", categoria: { siamese: 1 } },
+            { texto: "Uma vela acesa", categorias: { preto: 1 } },
+            { texto: "Uma xícara quase cheia", categorias: {cinza: 1 } }
 
         ]
     }
@@ -80,7 +80,7 @@ let pontuacao = {
     calico: 0,
     cinza: 0,
     amarelo: 0,
-    siamês: 0
+    siamese: 0
 };
 
 function mostrarPergunta() {
@@ -200,9 +200,9 @@ function mostrarResultado() {
             resultadoImagem = "cat-images/orange-cat.jpeg";
             resultadoTexto = "<span class='highlight'>Você é um gato amarelo!</span></span>: Gatos laranja são conhecidos por serem extremamente amigáveis e extrovertidos. Geralmente têm uma natureza descontraída e adoram atenção, sendo muito carinhosos com seus donos. Com um toque de humor, eles sempre conseguem arrancar risadas com suas travessuras.";
             break;
-        case 'siamês':
+        case 'siamese':
             resultadoImagem = "cat-images/siamese-cat.jpeg";
-            resultadoTexto = "<span class='highlight'>Você é um gato siamês</span>: Gatos siameses são altamente expressivos e adoram 'conversar' com seus donos. São extremamente leais e se apegam muito aos membros da família, demonstrando carinho de forma intensa. Podem ser exigentes em relação à atenção e gostam de estar sempre perto de quem amam.";
+            resultadoTexto = "<span class='highlight'>Você é um gato siamese</span>: Gatos siameses são altamente expressivos e adoram 'conversar' com seus donos. São extremamente leais e se apegam muito aos membros da família, demonstrando carinho de forma intensa. Podem ser exigentes em relação à atenção e gostam de estar sempre perto de quem amam.";
             break;
         default:
             resultadoTexto = "<span class='highlight'>Não conseguimos determinar o seu sabor de pizza!";
@@ -230,7 +230,7 @@ function reiniciarTeste() {
         calico: 0,
         cinza: 0,
         amarelo: 0,
-        siamês: 0
+        siamese: 0
     };
 
     document.getElementById('quiz-container').innerHTML = `
