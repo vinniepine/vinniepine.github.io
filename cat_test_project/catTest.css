@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    width: 100%;
     background-color: #dca8b8;
     box-shadow: 0 4px 12px #a9818d;
     color: #FFFFFF;
