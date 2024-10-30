@@ -1,0 +1,234 @@
+body {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-weight: 500;
+    background-image: url('cute-cat-pattern.jpg'); /* Caminho para a imagem da textura */
+    background-size: 400px 400px; /* Ajusta o tamanho de cada bloco da imagem */
+    background-repeat: repeat; /* Repete a imagem em todas as direções */
+    margin: 0;
+    justify-content: center;
+}
+
+header {
+    background-color: #dca8b8;
+    box-shadow: 0 4px 12px #a9818d;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.subtitle {
+    font-weight: 800;
+    background-color: #c0a7d4; /* Cor de fundo, por exemplo, um tom de laranja */
+    color: #7a40a9; /* Cor do texto */
+    padding: 10px 30px; /* Espaçamento interno para deixar o fundo maior */
+    border-radius: 250px; /* Arredondar os cantos */
+    box-shadow: 
+        -5px 5px 0px 0px #7a40a9, /* Sombras adicionais para criar bordas arredondadas */
+        5px 5px 0px 0px #a26bce,
+        -5px -5px 0px 0px #dec7f1,
+        5px -5px 0px 0px #8e2fdc,
+        0 5px 5px rgba(0, 0, 0, 0.1); /* Sombra inferior */;
+    display: inline-block; /* Garante que o fundo se ajuste ao tamanho do texto */
+}
+
+.container {
+    background-color: #f2d2dc ;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 15px #cb555533;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1{
+    font-family: 'DynaPuff', Arial, Helvetica, sans-serif;
+    text-shadow:
+      -3px -3px 0 #a586be, 
+       3px -3px 0 #826599, 
+      -3px  3px 0 #6f5485, 
+       3px  3px 0 #5a406f,
+      -3px  0px 0 #664c7c,
+       3px  0px 0 #5f4773,
+       0px -3px 0 #4a335c,
+       0px  3px 0 #473258;
+    color: #d3bee5; 
+}
+
+p, h2{
+    font-family: 'Dosis';
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.question{
+    font-weight: bold;
+}
+
+
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+    display: none;
+}
+
+.music-control {
+    position: fixed;
+    box-shadow: 0 2px 0 #b0b0b0;
+    top: 20px;
+    right: 20px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    border: 2px;
+}
+
+.music-control:hover {
+    background-color: #ffffff;
+
+}
+.music-control:active{
+    transform: translateY(2px);
+}
+
+footer {
+    margin-top: auto;
+    color: #FFFFFF;
+    background-color: #b97489; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#pFooter{
+    color:#e8bcc9;
+    font-family: 'PT Sans Narrow', serif;
+}
+#autor1{ 
+    color: #e8bcc9;
+    text-decoration: none;
+}
+#autor1:hover{
+    color: #f5d5de;
+    font-weight: 800;
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria uma grade de 2 colunas */
+    gap: 5px; /* Espaçamento entre as opções */
+    justify-items: center; /* Centraliza os itens dentro das colunas */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#options-container label {
+    display: flex;
+    flex-direction: column; /* Alinha a imagem e o texto em coluna */
+    align-items: center; /* Centraliza o conteúdo no centro */
+    cursor: pointer; /* Cursor de mão para indicar que é clicável */
+}
+
+#options-container img {
+    width: 120px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: transform 0.2s; /* Animação de leve aumento */
+}
+
+#question-text{
+    font-size: medium;
+    display: flex;
+    align-items:cemter;
+    margin-left: 12%;
+}
+
+#resultado-imagem {
+    width: 400px;
+    display: block;
+    border-radius: 15px;
+    margin: 20px auto;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.highlight{
+    font-weight: 700;
+} 
+
+#resultado-imagem {
+    width: 400px;
+    display: block;
+    border-radius: 15px;
+    margin: 20px auto;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+button {
+    font-family: 'DynaPuff', Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff; /* Cor de fundo azul claro */
+    color: #333; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 18px;
+    border: none;
+    border-radius: 50px; /* Arredonda o botão */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease; /* Transição suave */
+    /* Sombras para criar o efeito de nuvem */
+    box-shadow: 
+        -15px 15px 0px 0px #e0f0ff, /* Sombras adicionais para criar bordas arredondadas */
+        15px 15px 0px 0px #e0f0ff,
+        -15px -15px 0px 0px #e0f0ff,
+        15px -15px 0px 0px #e0f0ff,
+        0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+}
+
+.cloud-button:hover {
+    background-color: #dceeff; /* Cor ao passar o mouse */
+    box-shadow: 
+        -15px 15px 0px 0px #cfeaff,
+        15px 15px 0px 0px #cfeaff,
+        -15px -15px 0px 0px #cfeaff,
+        15px -15px 0px 0px #cfeaff,
+        0 15px 20px #00000033; /* Sombra mais forte ao passar o mouse */
+}
+
+/* Estiliza os labels das opções de texto */
+.option-label {
+    display:block;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    cursor: pointer;
+    gap: 10px; /* Espaçamento entre a caixa de seleção e o texto */
+    width: 100%;
+}
+
+/* Define a posição e o alinhamento do texto */
+.option-text {
+    flex: 1;
+    text-align: left;
+}
+
+
+/* Oculta o input de rádio nas questões com imagem */
+.hidden-radio {
+    display: none;
+}

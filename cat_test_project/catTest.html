@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Personalidade de Pizza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="catTest.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap&family=Dosis&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body class="frontPage" onclick="scrollToTarget()">
+    <style>     
+    </style>
+    <header>
+        <div style="text-align: center;">
+            <h1>Teste de Personalidade</h1>
+            <section class="subtitle">
+                <div style="width: 500px;">Gatinhos são bichanos cheios de personalidade,
+                e comumente se crê que a personalidade deles varia de acordo
+                com sua cor. Descubra que tipo de gatinho você seria</div> 
+                </section>
+                </div>
+    </header>
+    <section class="container" id="quiz-container">
+        <p id="resultado-texto"></p>
+        <h2>Responda as seguintes perguntas</h2>
+        <div class="question" id="question-text"></div>
+        <div id="options-container"></div>
+        <button id="next-button" class="cloud-button" onclick="proximaPergunta()">próxima</button>
+    </section>    
+    <!-- Áudio e Controles -->
+    <audio id= "background-music" src="videoplayback.m4a.crdownload" autoplay loop></audio>  <!-- Tag de áudio para tocar a música -->
+    <button class="music-control" id="music-toggle"><i class="fas fa-volume-up"></i></button>  <!-- Botão para controlar a música -->
+    <script>
+        // Seleciona o elemento de áudio e o botão d    e controle
+            const music = document.getElementById('background-music');
+            const musicToggle = document.getElementById('music-toggle');
+            const icon = musicToggle.querySelector('i');
+
+        // Função para alternar a reprodução da música
+            musicToggle.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                icon.classList.remove('fa-volume-mute');
+                icon.classList.add('fa-volume-up'); // Ícone para som ligado
+            } else {
+                music.pause();
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-volume-mute'); // Ícone para som desligado
+        }
+    });
+        function scrollToTarget() {
+          const targetElement = document.getElementById("quiz-container");
+          targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      </script>
+      
+    <div style="height: 130px;">
+        <footer>
+            <p id="pFooter">By <a href="../" id="autor1">Vinicius Pinheiro</a>, Guilherme Assunção e Sunamita Nascimento</p>
+        </footer>
+    </div>
+    <script src="catTest.js"></script>
+</body>
+</html>
