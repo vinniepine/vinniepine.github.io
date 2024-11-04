@@ -5,8 +5,8 @@ const perguntas = [
         opcoes: [
             { texto: "Relaxar assistindo TV", categorias:       { margherita: 3, frango: 2, calabresa: 1 } },
             { texto: "Sair com amigos", categorias:             { calabresa: 3, abacaxiComLombo: 2, portuguesa: 1 } },
-            { texto: "Praticar esportes", categorias:           {frango: 3, portuguesa: 2, bacon: 1 } },
-            { texto: "Fazer compras", categorias:               {abacaxiComLombo: 3, quatroQueijos: 2, margherita: 1} },
+            { texto: "Praticar esportes", categorias:           { frango: 3, portuguesa: 2, bacon: 1 } },
+            { texto: "Fazer compras", categorias:               { abacaxiComLombo: 3, quatroQueijos: 2, margherita: 1} },
             { texto: "Ler", categorias:                         { quatroQueijos: 3, margherita: 2, portuguesa: 1 } },
             { texto: "Jogar video-games", caregorias:           { bacon: 3, calabresa: 2, quatroQueijos: 1 } }
         ]
@@ -41,14 +41,14 @@ const perguntas = [
             { texto: "Drama", categorias:       { quatroQueijos: 3, frango: 2, margherita: 1 } },
             { texto: "Terror", categorias:      { bacon: 3, quatroQueijos: 2, bacon: 1 } },
             { texto: "Suspense", categorias:    { portuguesa: 3, bacon: 2, calabresa: 1} },
-            { texto: "Fantasia", categorias:    {abacaxiComLombo: 3, portuguesa: 2, frango: 1} }
+            { texto: "Fantasia", categorias:    { abacaxiComLombo: 3, portuguesa: 2, frango: 1} }
         ]
     },
     {
         texto: "5. Qual é o seu animal de estimação preferido?",
         opcoes: [
-            { texto: "Gato", categorias:        { margherita: 3, quatroQueijos: 2, bacon: 1 } },
-            { texto: "Cachorro", categorias:    { calabresa: 3, frango: 2, portuguesa: 1 } },
+            { texto: "Gato", categorias:        { margherita: 3, frango: 2, bacon: 1 } },
+            { texto: "Cachorro", categorias:    { calabresa: 3, bacon: 2, portuguesa: 1 } },
             { texto: "Peixe", categorias:       { abacaxiComLombo: 3, portuguesa: 2, frango: 1  } },
             { texto: "Hamster", categorias:     { frango: 3, margherita: 2, abacaxiComLombo: 1 } },
             { texto: "Coelho", categorias:      { quatroQueijos: 3, abacaxiComLombo: 2, margherita: 1 } },
