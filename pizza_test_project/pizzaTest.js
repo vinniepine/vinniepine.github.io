@@ -3,70 +3,114 @@ const perguntas = [
     {
         texto: "1. O que você prefere fazer no tempo livre?",
         opcoes: [
-            { texto: "Relaxar assistindo TV", categorias: { margherita: 3, frango: 2, calabresa: 1 } },
-            { texto: "Sair com amigos", categorias: { calabresa: 3, abacaxiComLombo: 2, portuguesa: 1 } },
-            { texto: "Praticar esportes", categorias: {frango: 3, portuguesa: 2, bacon: 1 } },
-            { texto: "Fazer compras", categorias: {abacaxiComLombo: 3, quatroQueijos: 2, margherita: 1} },
-            { texto: "Ler", categorias: { quatroQueijos: 3, margherita: 2, portuguesa: 1 } },
-            { texto: "Jogar video-games", caregorias: { bacon: 3, calabresa: 2, quatroQueijos: 1 } }
+            { texto: "Relaxar assistindo TV", categorias:       { margherita: 3, frango: 2, calabresa: 1 } },
+            { texto: "Sair com amigos", categorias:             { calabresa: 3, abacaxiComLombo: 2, portuguesa: 1 } },
+            { texto: "Praticar esportes", categorias:           {frango: 3, portuguesa: 2, bacon: 1 } },
+            { texto: "Fazer compras", categorias:               {abacaxiComLombo: 3, quatroQueijos: 2, margherita: 1} },
+            { texto: "Ler", categorias:                         { quatroQueijos: 3, margherita: 2, portuguesa: 1 } },
+            { texto: "Jogar video-games", caregorias:           { bacon: 3, calabresa: 2, quatroQueijos: 1 } }
         ]
     },
     {
         texto: "2. Qual sua bebida favorita?",
         opcoes: [
-            { texto: "Café", categorias: { margherita: 3, calabresa: 2, margherita: 1 } },
-            { texto: "Chá", categorias: { quatroQueijos: 3, margherita: 2,  abacaxiComLombo: 1} },
-            { texto: "Refrigerante", categorias: { calabresa: 3, frango: 2, quatroQueijos: 1 } },
-            { texto: "Suco", categorias: { frango: 3, margherita: 2, quatroQueijos: 1 } },
-            { texto: "Cerveja", categorias: { bacon: 3, abacaxiComLombo: 2, portuguesa: 1 } },
-            { texto: "Energético", categorias: { abacaxiComLombo: 3, calabresa: 2, bacon: 1} }
+            { texto: "Café", categorias:            { margherita: 3, calabresa: 2, margherita: 1 } },
+            { texto: "Chá", categorias:             { quatroQueijos: 3, margherita: 2,  abacaxiComLombo: 1} },
+            { texto: "Refrigerante", categorias:    { calabresa: 3, frango: 2, quatroQueijos: 1 } },
+            { texto: "Suco", categorias:            { frango: 3, margherita: 2, quatroQueijos: 1 } },
+            { texto: "Cerveja", categorias:         { bacon: 3, abacaxiComLombo: 2, portuguesa: 1 } },
+            { texto: "Energético", categorias:      { abacaxiComLombo: 3, calabresa: 2, bacon: 1} }
         ]
     },
     {
         texto: "3. Qual é a sua música preferida para ouvir?",
         opcoes: [
-            { texto: "Rock / Metal / Indie", categorias: { frango: 3, bacon: 2, calabresa: 1 } },
-            { texto: "Pop / Rap / K-Pop,", categorias: { calabresa: 3, frango: 2, portuguesa: 1 } },
-            { texto: "Eletrônica / House / ", categorias: { abacaxiComLombo: 3, quatroQueijos: 2, frango: 1 } },
-            { texto: "Clássica / Instrumental", categorias: { margherita: 3, quatroQueijos: 2, abacaxiComLombo: 1 } },
-            { texto: "Sertanejo / Country / Folk", categorias: { bacon: 3, calabresa: 2, portuguesa: 1 }},
-            { texto: "Jazz / Blues / Soul", categorias: { quatroQueijos: 3, frango: 2, margherita: 1 } }
+            { texto: "Rock / Metal / Indie", categorias:         { frango: 3, bacon: 2, calabresa: 1 } },
+            { texto: "Pop / Rap / K-Pop,", categorias:           { calabresa: 3, frango: 2, portuguesa: 1 } },
+            { texto: "Eletrônica / House / ", categorias:        { abacaxiComLombo: 3, quatroQueijos: 2, frango: 1 } },
+            { texto: "Clássica / Instrumental", categorias:      { margherita: 3, quatroQueijos: 2, abacaxiComLombo: 1 } },
+            { texto: "Sertanejo / Country / Folk", categorias:   { bacon: 3, calabresa: 2, portuguesa: 1 }},
+            { texto: "Jazz / Blues / Soul", categorias:          { quatroQueijos: 3, frango: 2, margherita: 1 } }
         ]
     },
     {
         texto: "4. Qual tipo de filme você mais gosta?",
         opcoes: [
-            { texto: "Comédia", categorias: { frango: 3, calabresa: 2, abacaxiComLombo: 1, } },
-            { texto: "Ação", categorias: { calabresa: 3, bacon: 2, quatroQueijos: 1 } },
-            { texto: "Drama", categorias: { quatroQueijos: 3, frango: 2, margherita: 1 } },
-            { texto: "Terror", categorias: { bacon: 3, quatroQueijos: 2, bacon: 1 } },
-            { texto: "Suspense", categorias: { portuguesa: 3, bacon: 2, calabresa: 1} },
-            { texto: "Fantasia", categorias: {abacaxiComLombo: 3, portuguesa: 2, frango: 1} }
+            { texto: "Comédia", categorias:     { frango: 3, calabresa: 2, abacaxiComLombo: 1, } },
+            { texto: "Ação", categorias:        { calabresa: 3, bacon: 2, quatroQueijos: 1 } },
+            { texto: "Drama", categorias:       { quatroQueijos: 3, frango: 2, margherita: 1 } },
+            { texto: "Terror", categorias:      { bacon: 3, quatroQueijos: 2, bacon: 1 } },
+            { texto: "Suspense", categorias:    { portuguesa: 3, bacon: 2, calabresa: 1} },
+            { texto: "Fantasia", categorias:    {abacaxiComLombo: 3, portuguesa: 2, frango: 1} }
         ]
     },
     {
         texto: "5. Qual é o seu animal de estimação preferido?",
         opcoes: [
-            { texto: "Gato", categorias: { margherita: 3, quatroQueijos: 2, bacon: 1 } },
-            { texto: "Cachorro", categorias: { calabresa: 3, frango: 2, portuguesa: 1 } },
-            { texto: "Peixe", categorias: { abacaxiComLombo: 3, portuguesa: 2, frango: 1  } },
-            { texto: "Hamster", categorias: { frango: 3, margherita: 2, abacaxiComLombo: 1 } },
-            { texto: "Coelho", categorias: { quatroQueijos: 3, abacaxiComLombo: 2, margherita: 1 } },
-            { texto: "Pássaro", categorias: { portuguesa: 3, quatroQueijos: 2, calabresa: 1 }}
+            { texto: "Gato", categorias:        { margherita: 3, quatroQueijos: 2, bacon: 1 } },
+            { texto: "Cachorro", categorias:    { calabresa: 3, frango: 2, portuguesa: 1 } },
+            { texto: "Peixe", categorias:       { abacaxiComLombo: 3, portuguesa: 2, frango: 1  } },
+            { texto: "Hamster", categorias:     { frango: 3, margherita: 2, abacaxiComLombo: 1 } },
+            { texto: "Coelho", categorias:      { quatroQueijos: 3, abacaxiComLombo: 2, margherita: 1 } },
+            { texto: "Pássaro", categorias:     { portuguesa: 3, quatroQueijos: 2, calabresa: 1 }}
         ]
     },
     {
         texto: "6. Como você se comporta na festa?",
         opcoes: [
-            { texto: "Sempre sou o primeiro a aparecer", categorias: { portuguesa: 3, frango: 2, bacon: 1} },
-            { texto: "Chego atrasado, mas sempre chego", categoria: { abacaxiComLombo: 3, quatroQueijos: 2, calabresa: 1} },
-            { texto: "Eu é quem organizo a festa", categorias: { calabresa: 3, abacaxiComLombo: 2, frango: 1 } },
+            { texto: "Sempre sou o primeiro a aparecer", categorias:        { portuguesa: 3, frango: 2, bacon: 1} },
+            { texto: "Chego atrasado, mas sempre chego", categoria:         { abacaxiComLombo: 3, quatroQueijos: 2, calabresa: 1} },
+            { texto: "Eu é quem organizo a festa", categorias:              { calabresa: 3, abacaxiComLombo: 2, frango: 1 } },
             { texto: "Não chego cedo, mas sou o último a sair", categorias: { quatroQueijos: 3, bacon: 2, abacaxiComLombo: 1} },
-            { texto: "Que festa? Ninguém me convidou...", categoria: { frango: 3, margherita: 2, portuguesa: 1 } },
-            { texto: "Dependendo da festa, nem vou", categorias: { margherita: 3, portuguesa: 2, frango: 1} }
+            { texto: "Que festa? Ninguém me convidou...", categoria:        { frango: 3, margherita: 2, portuguesa: 1 } },
+            { texto: "Dependendo da festa, nem vou", categorias:            { margherita: 3, portuguesa: 2, frango: 1} }
 
         ]
-    }
+    },
+    {
+        texto: "7. Qual é a sua estação do ano favorita?",
+        opcoes: [
+            { texto: "Verão", categorias:           { abacaxiComLombo: 3, margherita: 2, bacon: 1 } },
+            { texto: "Inverno", categorias:         { quatroQueijos: 3, frango: 2, calabresa: 1 } },
+            { texto: "Primavera", categorias:       { margherita: 3, portuguesa: 2, quatroQueijos: 1 } },
+            { texto: "Outono", categorias:          { calabresa: 3, abacaxiComLombo: 2, frango: 1 } },
+            { texto: "Todas", categorias:           { bacon: 3, portuguesa: 2, margherita: 1 } },
+            { texto: "Nenhuma", categorias:         { portuguesa: 3, bacon: 2, quatroQueijos: 1 } }
+        ]
+    }, 
+    {
+        texto: "8. O que você prefere comer no café da manhã?",
+        opcoes: [
+        { texto: "Pão com manteiga", categorias:            { frango: 3, margherita: 2, bacon: 1 } },
+         { texto: "Frutas e iogurte", categorias:           { abacaxiComLombo: 3, portuguesa: 2, quatroQueijos: 1 } },
+         { texto: "Panquecas", categorias:                  { quatroQueijos: 3, calabresa: 2, margherita: 1 } },
+         { texto: "Café e bolo", categorias:                { calabresa: 3, bacon: 2, portuguesa: 1 } },
+         { texto: "Não costumo tomar café", categorias:     { portuguesa: 3, quatroQueijos: 2, frango: 1 } },
+         { texto: "Suco e biscoitos", categorias:           { margherita: 3, calabresa: 2, abacaxiComLombo: 1 } }
+        ]
+    },
+    {
+        texto: "9. Qual seria o seu destino de férias ideal?",
+        opcoes: [
+         { texto: "Praia", categorias:              { abacaxiComLombo: 3, frango: 2, calabresa: 1 } },
+         { texto: "Montanhas", categorias:          { portuguesa: 3, margherita: 2, bacon: 1 } },
+         { texto: "Cidade histórica", categorias:   { margherita: 3, portuguesa: 2, quatroQueijos: 1 } },
+         { texto: "Camping", categorias:            { bacon: 3, abacaxiComLombo: 2, portuguesa: 1 } },
+         { texto: "Cidade grande", categorias:      { quatroQueijos: 3, quatroQueijos: 2, abacaxiComLombo: 1 } },
+         { texto: "Campo", categorias:              { frango: 3, bacon: 2, margherita: 1 } }
+    ]
+    },
+    {
+    texto: "10. Qual desses seria um hobby seu?",
+    opcoes: [
+        { texto: "Cozinhar", categorias:    { quatroQueijos: 3, calabresa: 2, bacon: 1 } },
+        { texto: "Desenhar", categorias:    { calabresa: 3, frango: 2, abacaxiComLombo: 1 } },
+        { texto: "Fotografia", categorias:  { bacon: 3, portuguesa: 2, calabresa: 1 } },
+        { texto: "Jardinagem", categorias:  { abacaxiComLombo: 3, margherita: 2, portuguesa: 1 } },
+        { texto: "Costura", categorias:     { margherita: 3, abacaxiComLombo: 2, quatroQueijos: 1 } },
+        { texto: "Escrever", categorias:    { frango: 3, margherita: 2, margherita: 1 } }
+    ]
+}
 ];
 
 let indicePerguntaAtual = 0;
