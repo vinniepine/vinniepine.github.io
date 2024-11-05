@@ -66,7 +66,7 @@ li {
 }
 li:hover{
     box-shadow: 0 2px 0 #e0b02c;
-    background-color: #fccd4d;
+    background-color: #ffdb78;
     transform: translateY(1px);
 }
 li:active{
@@ -102,7 +102,7 @@ a {
 
 .specialButton:hover {
     box-shadow: 0 4px 0 #fccd4d;
-    background-color: #fccd4d;
+    background-color: #ffdb78;
     transform: translateY(1px);
 }
 
@@ -131,7 +131,7 @@ a {
 }
 .headerButton:hover{
     box-shadow: 0 4px 0 #4b86e5;
-    background-color: #5494fc;
+    background-color: rgb(109, 164, 253);
     transform: translateY(1px);
 }
 .headerButton:active {
