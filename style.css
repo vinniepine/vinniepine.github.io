@@ -1,17 +1,17 @@
 body {
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Agdasima', sans-serif;
     font-size: 120%;
     background-color: #1A1A1D; /* Dark background color */
-    color: #F7F0D2; /* Lightest color from the palette */
+    color: #ffffff; /* Lightest color from the palette */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #D9534F; /* Red from the palette */
+    background-color: #1e5cc0; /* Red from the palette */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px #c34b47; /* Shadow using the specified color */
+    box-shadow: 0 4px 8px #194ea3; /* Shadow using the specified color */
     margin-bottom: 80px;
 }
 
@@ -54,28 +54,28 @@ ul {
 }
 
 li {
-    background-color: #3EA2C0;
-    box-shadow: 0 3px 0 #257f9b;
+    background-color: #ffd667;
+    box-shadow: 0 3px 0 #e0b02c;
     font-size: 80%;
     font-family: 'Tomorrow';
     font-weight: bold;
-    color: #FFFFFF;
+    color: #000000;
     margin-bottom: 10px;
     padding: 12px;
     border-radius: 10px;
 }
-
+li:hover{
+    background-color: #fccd4d;
+    transform: translateY(1px);
+}
 li:active{
     box-shadow: none;
     transform: translateY(3px);
 }
 
-li:hover{
-    background-color: #51b4d3;
-}
 
 a {
-    color: #ffffff;
+    color: #000000;
     border: 0;
     padding: 5px;
     border-radius: 20px;
@@ -84,14 +84,14 @@ a {
 }
 .specialButton {
     display: inline-block;
-    background-color: #3EA2C0; 
-    box-shadow: 0 5px 0 #257f9b; 
+    background-color: #ffd667; 
+    box-shadow: 0 5px 0 #e0b02c; 
     margin-right: 5px;
     margin-top: 20px;
     padding: 12px 20px;
     border-radius: 12px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #000000;
     font-family: "Tomorrow", sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -100,18 +100,20 @@ a {
 }
 
 .specialButton:hover {
-    background-color: #55b4d0;
+    background-color: #fccd4d;
+    transform: translateY(1px);
 }
 
 .specialButton:active {
+    background-color: #fbc42a;
     box-shadow: none;
     transform: translateY(5px);
 }
 
 .headerButton {
     display: inline-block;
-    background-color: #da7672;
-    box-shadow: 0 5px 0 #a74642; 
+    background-color: #67a1ff;
+    box-shadow: 0 5px 0 #4b86e5; 
     margin-right: 5px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -125,13 +127,18 @@ a {
     text-align: center;
     cursor: pointer;
 }
+.headerButton:hover{
+    background-color: #5494fc;
+    transform: translateY(1px);
+
+}
 .headerButton:active {
     box-shadow: none;
-    transform: translateY(5px);
+    transform: translateY(4px);
+    background-color: #3984fb;
+
 }
-.headerButton:hover{
-    background-color: #f48985;
-}
+
 
 
 footer {
