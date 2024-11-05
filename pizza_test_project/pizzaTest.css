@@ -61,7 +61,7 @@ button {
     font-weight: bold;
 }
 button:hover {
-    box-shadow: 0 3px 0;
+    box-shadow: 0 3px 0 #642323;
     background-color: #b53b3b;
     transform: translateY(1px);
 }

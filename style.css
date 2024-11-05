@@ -65,7 +65,7 @@ li {
     border-radius: 10px;
 }
 li:hover{
-    box-shadow: 0 2px 0;
+    box-shadow: 0 2px 0 #e0b02c;
     background-color: #fccd4d;
     transform: translateY(1px);
 }
@@ -101,7 +101,7 @@ a {
 }
 
 .specialButton:hover {
-    box-shadow: 0 4px 0;
+    box-shadow: 0 4px 0 #fccd4d;
     background-color: #fccd4d;
     transform: translateY(1px);
 }
@@ -130,7 +130,7 @@ a {
     cursor: pointer;
 }
 .headerButton:hover{
-    box-shadow: 0 4px 0;
+    box-shadow: 0 4px 0 #4b86e5;
     background-color: #5494fc;
     transform: translateY(1px);
 }
