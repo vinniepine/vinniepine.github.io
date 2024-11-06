@@ -30,17 +30,40 @@ header {
 }
 
 
-section {
-    padding: 0px;
-}
-
-.container {
+.container{
     max-width: 600px;
     margin: auto auto;
     background-color: #43474A; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px #43474A;
+}
+
+.aboutMeContainer {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    max-width: 1000px;
+    margin: auto auto;
+    background-color: #43474A; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px #43474A;
+}
+
+.personalPhoto{
+    width: 300px; /* Defina a largura e altura */
+    height: 400px;
+    background-image: url('myPhoto.png');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 20px;
+    border: 5px solid #77a8f6;
+    box-shadow: -3px 3px 0px  #3984fb;
+}
+.aboutMe {
+    flex: 10;
+    max-width: 75%;
 }
 
 
@@ -70,10 +93,10 @@ li:hover{
     transform: translateY(1px);
 }
 li:active{
+    background-color: #fbc42a;
     box-shadow: none;
     transform: translateY(2px);
 }
-
 
 a {
     color: #000000;
@@ -152,15 +175,16 @@ footer {
     width: 100%;
     padding: 10px;
     text-align: center;
+    
 }
 
 #aFooter {
+    margin-bottom: px;
     font-size: 80%;
     color: #ffffff;
     font-family: 'Tomorrow';
     text-align: justify;
     text-align: center;
-
 }
 
 #aFooter:hover{
