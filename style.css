@@ -112,13 +112,16 @@ a {
     transform: translateY(4px);
 }
 
+.headerButtonDiv{
+    margin-top: 40px;
+    margin-right: 40px;
+}
 .headerButton {
     display: inline-block;
     background-color: #67a1ff;
     box-shadow: 0 5px 0 #4b86e5; 
     margin-right: 5px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 5px;
     padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
